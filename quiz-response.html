@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+        <title>Quiz Result — Type Soul</title>
+
+        <link
+            rel="stylesheet"
+            href="headerFooter.css">
+
+        <link rel="stylesheet" href="quiz.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="headerNav">
+
+            <div class="headerNavInner">
+
+                <div class="hnBarLeft">
+
+                    <span class="hnBarIcon">
+                        ✦
+                    </span>
+
+                    <a
+                        href="home.html"
+                        class="hnBarNav">
+
+                        Home
+
+                    </a>
+
+                    <span class="hnBarDots"></span>
+
+                    <a
+                        href="builds.html"
+                        class="hnBarNav">
+
+                        Builds
+
+                    </a>
+
+                    <span class="hnBarDots"></span>
+
+                    <a
+                        href="quiz.html"
+                        class="hnBarNav active">
+
+                        Quiz
+
+                    </a>
+
+                    <span class="hnBarDots"></span>
+
+                    <a
+                        href="fun-facts.html"
+                        class="hnBarNav">
+
+                        Fun Facts
+
+                    </a>
+
+                    <span class="hnBarDots"></span>
+
+                    <a
+                        href="community.html"
+                        class="hnBarNav">
+
+                        Community
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= RESULT ================= -->
+
+        <main class="quizPage">
+
+            <section
+                class="playerFormSection resultPage">
+
+                <div class="formHeader">
+
+                    <div class="heroTag">
+                        TYPE://SOUL • RESULT ARCHIVE
+                    </div>
+
+                    <h2>
+                        YOUR RESULT
+                    </h2>
+
+                    <p id="resultMessage">
+                        Your quiz result has been recorded.
+                    </p>
+
+                </div>
+
+                <!-- SCORE -->
+
+                <div class="scorePreview resultScore">
+
+                    <div>
+
+                        <span>
+                            FINAL SCORE
+                        </span>
+
+                        <strong id="resultScore">
+                            0 / 10
+                        </strong>
+
+                    </div>
+
+                    <div class="scoreLine"></div>
+
+                    <div
+                        class="scoreHint"
+                        id="scoreMessage">
+
+                        Loading result...
+
+                    </div>
+
+                </div>
+
+                <!-- ================= PLAYER TABLE ================= -->
+
+                <div class="resultTableSection">
+
+                    <h3>
+                        PLAYER INFORMATION
+                    </h3>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    INFORMATION
+                                </th>
+
+                                <th>
+                                    SUBMITTED DATA
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Player Name
+                                </td>
+
+                                <td id="playerName">
+                                    -
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Roblox Username
+                                </td>
+
+                                <td id="robloxUsername">
+                                    -
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Favourite Race
+                                </td>
+
+                                <td id="favouriteRace">
+                                    -
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Experience Level
+                                </td>
+
+                                <td id="experience">
+                                    -
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- ================= QUIZ TABLE ================= -->
+
+                <div class="resultTableSection">
+
+                    <h3>
+                        QUIZ PERFORMANCE
+                    </h3>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    CATEGORY
+                                </th>
+
+                                <th>
+                                    RESULT
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Questions Answered
+                                </td>
+
+                                <td id="questionsAnswered">
+                                    -
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Correct Answers
+                                </td>
+
+                                <td id="correctAnswers">
+                                    -
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Accuracy
+                                </td>
+
+                                <td id="accuracy">
+                                    -
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- ================= BUTTONS ================= -->
+
+                <div class="resultButtons">
+
+                    <a
+                        href="quiz.html"
+                        class="submitButton">
+
+                        TAKE QUIZ AGAIN
+                        <span>↻</span>
+
+                    </a>
+
+                    <a
+                        href="home.html"
+                        class="resultHomeButton">
+
+                        BACK TO HOME
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="mainFooter">
+
+            <div class="footerContainer">
+                <div class="coolLine"></div>
+                <div class="footerTop">
+                    <div class="footerBrand">
+                        <h2 class="footerTitle">TYPE</h2>
+                        <h2 class="footerTitle footerTitleLarge"><br>&nbsp✦
+                            SOUL</h2>
+                        <p class="footerSubTitle">AN EXTREMELY <span
+                                class="highlightText">COMPETITIVE</span> ROBLOX
+                            GAME</p>
+                    </div>
+
+                    <nav class="footerNav">
+                        <div class="footerNavCol">
+                            <h4 class="footerNavTitle">Navigate</h4>
+                            <span class="footerTitleLine"></span>
+                            <div class="footerNavGrid">
+                                <a href="home.html"
+                                    class="footerNavGridBtn">Home</a>
+                                <a href="builds.html"
+                                    class="footerNavGridBtn">Build Guide</a>
+                                <a href="quiz.html"
+                                    class="footerNavGridBtn">Quiz</a>
+                                <a href="fun-facts.html"
+                                    class="footerNavGridBtn">Fun Facts</a>
+                                <a href="community.html"
+                                    class="footerNavGridBtn">Community</a>
+                            </div>
+                        </div>
+
+                        <div class="footerNavCol">
+                            <h4 class="footerNavTitle">Resources</h4>
+                            <span class="footerTitleLine"></span>
+                            <div class="footerNavGrid">
+                                <a href="#" class="footerNavGridBtn">About Type
+                                    Soul</a>
+                                <a href="#" class="footerNavGridBtn">Race
+                                    Guides</a>
+                                <a href="#" class="footerNavGridBtn">Archive</a>
+                                <a href="#" class="footerNavGridBtn">Roblox</a>
+                                <a href="#" class="footerNavGridBtn">Discord</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="coolLine"></div>
+
+            </div>
+
+        </footer>
+
+        <!-- ================= RESULT JS ================= -->
+
+        <script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const storedResult =
+            localStorage.getItem(
+                "typeSoulQuizResult"
+            );
+
+
+        if (!storedResult) {
+
+            document.getElementById(
+                "resultMessage"
+            ).textContent =
+                "No quiz result was found. Take the quiz first.";
+
+            return;
+
+        }
+
+
+        const result =
+            JSON.parse(storedResult);
+
+
+        /* Player information */
+
+        document.getElementById(
+            "playerName"
+        ).textContent =
+            result.playerName;
+
+
+        document.getElementById(
+            "robloxUsername"
+        ).textContent =
+            result.robloxUsername;
+
+
+        document.getElementById(
+            "favouriteRace"
+        ).textContent =
+            result.favouriteRace;
+
+
+        document.getElementById(
+            "experience"
+        ).textContent =
+            result.experience;
+
+
+        /* Score */
+
+        document.getElementById(
+            "resultScore"
+        ).textContent =
+            result.score +
+            " / " +
+            result.total;
+
+
+        document.getElementById(
+            "questionsAnswered"
+        ).textContent =
+            result.total;
+
+
+        document.getElementById(
+            "correctAnswers"
+        ).textContent =
+            result.score;
+
+
+        const accuracy =
+            Math.round(
+                (
+                    result.score /
+                    result.total
+                ) * 100
+            );
+
+
+        document.getElementById(
+            "accuracy"
+        ).textContent =
+            accuracy + "%";
+
+
+        /* Message */
+
+        let message;
+
+
+        if (accuracy === 100) {
+
+            message =
+                "PERFECT SCORE — You truly know TYPE://SOUL.";
+
+        }
+
+        else if (accuracy >= 80) {
+
+            message =
+                "EXCELLENT — Your TYPE://SOUL knowledge is strong.";
+
+        }
+
+        else if (accuracy >= 60) {
+
+            message =
+                "NOT BAD — You know your way around the game.";
+
+        }
+
+        else if (accuracy >= 40) {
+
+            message =
+                "KEEP LEARNING — There is still more to discover.";
+
+        }
+
+        else {
+
+            message =
+                "TIME TO GRIND — The archive awaits.";
+
+        }
+
+
+        document.getElementById(
+            "scoreMessage"
+        ).textContent =
+            message;
+
+    }
+
+);
+
+</script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+        <script src="animations.js"></script>
+
+    </body>
+</html>

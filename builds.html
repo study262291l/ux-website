@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Guide</title>
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@400;600;700&family=Pinyon+Script&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet" href="builds.css">
+    <link rel="stylesheet" href="animations.css">
+  </head>
+  <body>
+
+    <header class="headerNav">
+      <div class="headerNavInner">
+        <div class="hnBarLeft center">
+          <span class="hnBarIcon">✦</span>
+          <a href="home.html" class="hnBarNav">Home</a>
+          <span class="hnBarDots"></span>
+          <a href="builds.html" class="hnBarNav active">Builds</a>
+          <span class="hnBarDots"></span>
+          <a href="quiz.html" class="hnBarNav">Quiz</a>
+          <span class="hnBarDots"></span>
+          <a href="fun-facts.html" class="hnBarNav">Fun Facts</a>
+          <span class="hnBarDots"></span>
+          <a href="community.html" class="hnBarNav">Community</a>
+          <span class="hnBarDots"></span>
+          <span class="hnBarViewing">NAVIGATION</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section staticImageReveal">
+      <div class="hero-content">
+        <p class="sub-header">BUILD GUIDES</p>
+        <h1 class="hero-title">TYPE SOUL</h1>
+      </div>
+    </section>
+
+    <section class="intro-section staticImageReveal">
+      <div class="intro-container">
+        <div class="intro-header">
+          <i class="fa-solid fa-butterfly butterfly-icon"></i>
+          <h2>What are builds?</h2>
+        </div>
+        <div class="intro-grid">
+          <p class="intro-text">
+            A Build comprises of the stats you put into a <a
+              href="home.html?target=faqSkillTree" target="_blank">skill
+              tree&nbsp;</a> along side your <a
+              href="home.html?target=faqElements" target="_blank">element</a>.
+            Each build suits a different playstyle.
+          </p>
+          <p class="intro-text">
+            Check back regularly for updated meta strategies and community patch
+            summaries to keep your character optimized for every update.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="races-section autoShow" id="racesSection">
+      <div class="race-banner ">
+        <h1 class="race-title" id="display-title">SOUL REAPER</h1>
+        <p class="race-subtitle" id="display-subtitle">4 RACES • OPTIMIZED
+          BUILDS</p>
+      </div>
+
+      <div class="race-grid">
+        <div class="race-card active" onclick="selectRace('sr', event)">
+          <div class="img-wrapper">
+            <img src="assets/type.png" alt="Soul Reaper">
+          </div>
+          <span>SOUL REAPER</span>
+        </div>
+
+        <div class="race-card" onclick="selectRace('arrancar', event)">
+          <div class="img-wrapper">
+            <img src="assets/type3.png" alt="Arrancar">
+          </div>
+          <span>ARRANCAR</span>
+        </div>
+
+        <div class="race-card" onclick="selectRace('quincy', event)">
+          <div class="img-wrapper">
+            <img src="assets/type2.png" alt="Quincy">
+          </div>
+          <span>QUINCY</span>
+        </div>
+
+        <div class="race-card" onclick="selectRace('fullbringer', event)">
+          <div class="img-wrapper">
+            <img src="assets/type4.png" alt="Fullbringer">
+          </div>
+          <span>FULLBRINGER</span>
+        </div>
+      </div>
+
+      <div class="builds-container" id="builds-list">
+      </div>
+
+    </section>
+
+    <footer class="mainFooter">
+
+      <div class="footerContainer">
+        <div class="coolLine"></div>
+        <div class="footerTop">
+          <div class="footerBrand">
+            <h2 class="footerTitle">TYPE</h2>
+            <h2 class="footerTitle footerTitleLarge"><br>&nbsp✦ SOUL</h2>
+            <p class="footerSubTitle">AN EXTREMELY <span
+                class="highlightText">COMPETITIVE</span> ROBLOX GAME</p>
+          </div>
+
+          <nav class="footerNav">
+            <div class="footerNavCol">
+              <h4 class="footerNavTitle">Navigate</h4>
+              <span class="footerTitleLine"></span>
+              <div class="footerNavGrid">
+                <a href="home.html" class="footerNavGridBtn">Home</a>
+                <a href="builds.html" class="footerNavGridBtn">Build Guide</a>
+                <a href="quiz.html" class="footerNavGridBtn">Quiz</a>
+                <a href="fun-facts.html" class="footerNavGridBtn">Fun Facts</a>
+                <a href="community.html" class="footerNavGridBtn">Community</a>
+              </div>
+            </div>
+
+            <div class="footerNavCol">
+              <h4 class="footerNavTitle">Resources</h4>
+              <span class="footerTitleLine"></span>
+              <div class="footerNavGrid">
+                <a href="home.html#aboutSection" class="footerNavGridBtn">About
+                  Type Soul</a>
+                <a href="fun-facts.html#timeline" class="footerNavGridBtn">Type
+                  Soul Archive</a>
+                <a href="fun-facts.html#changed" class="footerNavGridBtn">What Changed</a>
+                <a href="community.html#youtubers" class="footerNavGridBtn">Youtubers</a>
+                <a href="community.html#communitySpotlight" class="footerNavGridBtn">Community Spotlight</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="coolLine"></div>
+
+      </div>
+
+    </footer>
+
+    <script src="builds.js"></script>
+    <script src="animations.js"></script>
+
+  </body>
+</html>

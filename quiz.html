@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quiz — Type Soul</title>
+
+        <!-- Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Your CSS -->
+        <link rel="stylesheet" href="headerFooter.css">
+        <link rel="stylesheet" href="quiz.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+        <header class="headerNav">
+            <div class="headerNavInner">
+                <div class="hnBarLeft">
+                    <span class="hnBarIcon">✦</span>
+                    <a href="home.html" class="hnBarNav">Home</a>
+                    <span class="hnBarDots"></span>
+                    <a href="builds.html" class="hnBarNav">Builds</a>
+                    <span class="hnBarDots"></span>
+                    <a href="quiz.html" class="hnBarNav active">Quiz</a>
+                    <span class="hnBarDots"></span>
+                    <a href="fun-facts.html" class="hnBarNav ">Fun Facts</a>
+                    <span class="hnBarDots"></span>
+                    <a href="community.html" class="hnBarNav">Community</a>
+                    <span class="hnBarDots"></span>
+                    <span class="hnBarViewing">NAVIGATION</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+        <main class="quizPage">
+
+            <!-- HERO -->
+
+            <section class="quizHero staticImageReveal">
+
+                <div class="heroTag staticImageReveal">
+                    TYPE://SOUL &nbsp; • &nbsp; KNOWLEDGE TEST
+                </div>
+
+                <h1>
+                    HOW WELL DO
+                    <span>YOU KNOW TYPE SOUL?</span>
+                </h1>
+
+                <p>
+                    Ten questions. One score.
+                    <br>
+                    Let's see if you actually know your stuff.
+                </p>
+
+            </section>
+
+            <!-- =================================================
+         QUIZ
+         ================================================= -->
+
+            <section
+                class="quizPanel container-fluid staticImageReveal"
+                id="quizPanel">
+
+                <div class="quizPanelTop row align-items-center staticImageReveal">
+
+                    <div class="col-md-4 staticImageReveal">
+
+                        <span class="smallLabel staticImageReveal">
+                            CURRENT QUESTION
+                        </span>
+
+                        <div class="questionNumber">
+
+                            <span id="currentQuestion">
+                                01
+                            </span>
+
+                            <span class="questionSlash">
+                                /
+                            </span>
+
+                            <span id="totalQuestions">
+                                10
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bootstrap responsive column -->
+
+                    <div class="col-md-8">
+
+                        <div class="progressContainer ms-md-auto">
+
+                            <div class="progressText">
+                                PROGRESS
+                            </div>
+
+                            <!-- Bootstrap progress bar -->
+
+                            <div
+                                class="progress"
+                                role="progressbar"
+                                aria-label="Quiz progress"
+                                aria-valuemin="0"
+                                aria-valuemax="100">
+
+                                <div
+                                    class="progress-bar progressBar"
+                                    id="progressBar"
+                                    style="width: 10%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- QUESTION -->
+
+                <div class="questionArea">
+
+                    <div class="questionTag">
+                        QUESTION
+                    </div>
+
+                    <h2 id="questionText">
+                        Loading...
+                    </h2>
+
+                    <!-- Bootstrap row + columns -->
+                    <div
+                        class="row g-3 answerGrid"
+                        id="answerList">
+                    </div>
+
+                </div>
+
+                <!-- CONTROLS -->
+
+                <div class="quizControls">
+
+                    <button
+                        type="button"
+                        class="quizButton backButton"
+                        id="previousButton">
+
+                        ← BACK
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="quizButton nextButton"
+                        id="nextButton">
+
+                        NEXT QUESTION →
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- =================================================
+         PLAYER FORM
+         ================================================= -->
+
+            <section
+                class="playerFormSection container hidden staticImageReveal"
+                id="playerFormSection">
+
+                <div class="formHeader staticImageReveal">
+
+                    <div class="heroTag staticImageReveal">
+                        RESULT ARCHIVE
+                    </div>
+
+                    <h2>
+                        SAVE YOUR
+                        <span>RESULT</span>
+                    </h2>
+
+                    <p>
+                        Tell us a little about yourself before
+                        your result enters the archive.
+                    </p>
+
+                </div>
+
+                <form id="playerForm">
+
+                    <!-- Bootstrap grid -->
+
+                    <div class="row g-4 formGrid staticImageReveal">
+
+                        <!-- NAME -->
+
+                        <div class="col-md-6 formGroup staticImageReveal">
+
+                            <label for="playerName">
+                                PLAYER NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="playerName"
+                                name="playerName"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+                        <!-- ROBLOX USERNAME -->
+
+                        <div class="col-md-6 formGroup staticImageReveal">
+
+                            <label for="robloxUsername staticImageReveal">
+                                ROBLOX USERNAME
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="robloxUsername"
+                                name="robloxUsername"
+                                placeholder="Enter your Roblox username"
+                                required>
+
+                        </div>
+
+                        <!-- RACE -->
+
+                        <div class="col-md-6 formGroup staticImageReveal">
+
+                            <label for="favouriteRace">
+                                FAVOURITE RACE
+                            </label>
+
+                            <select
+                                id="favouriteRace"
+                                name="favouriteRace"
+                                class="form-select staticImageReveal"
+                                required>
+
+                                <option value>
+                                    Select your race
+                                </option>
+
+                                <option value="Soul Reaper">
+                                    Soul Reaper
+                                </option>
+
+                                <option value="Hollow">
+                                    Hollow
+                                </option>
+
+                                <option value="Quincy">
+                                    Quincy
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- EXPERIENCE -->
+
+                        <div class="col-md-6 formGroup staticImageReveal">
+
+                            <label>
+                                EXPERIENCE LEVEL
+                            </label>
+
+                            <div class="radioGroup staticImageReveal">
+
+                                <label class="radioOption staticImageReveal">
+
+                                    <input
+                                        type="radio"
+                                        name="experience"
+                                        value="Beginner"
+                                        required>
+
+                                    <span>
+                                        BEGINNER
+                                    </span>
+
+                                </label>
+
+                                <label class="radioOption staticImageReveal">
+
+                                    <input
+                                        type="radio"
+                                        name="experience"
+                                        value="Experienced">
+
+                                    <span>
+                                        EXPERIENCED
+                                    </span>
+
+                                </label>
+
+                                <label class="radioOption staticImageReveal">
+
+                                    <input
+                                        type="radio"
+                                        name="experience"
+                                        value="Veteran">
+
+                                    <span>
+                                        VETERAN
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SCORE -->
+
+                    <div class="scorePreview staticImageReveal">
+
+                        <div>
+
+                            <span>
+                                YOUR SCORE
+                            </span>
+
+                            <strong id="formScore" class="staticImageReveal">
+                                0 / 10
+                            </strong>
+
+                        </div>
+
+                        <div class="scoreLine staticImageReveal"></div>
+
+                        <div class="scoreHint staticImageReveal">
+                            Ready to enter the archive?
+                        </div>
+
+                    </div>
+
+                    <!-- Bootstrap button -->
+
+                    <button
+                        type="submit"
+                        class="btn submitButton">
+
+                        SUBMIT RESULT
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+    <footer class="mainFooter">
+
+      <div class="footerContainer">
+        <div class="coolLine"></div>
+        <div class="footerTop">
+          <div class="footerBrand">
+            <h2 class="footerTitle">TYPE</h2>
+            <h2 class="footerTitle footerTitleLarge"><br>&nbsp✦ SOUL</h2>
+            <p class="footerSubTitle">AN EXTREMELY <span
+                class="highlightText">COMPETITIVE</span> ROBLOX GAME</p>
+          </div>
+
+          <nav class="footerNav">
+            <div class="footerNavCol">
+              <h4 class="footerNavTitle">Navigate</h4>
+              <span class="footerTitleLine"></span>
+              <div class="footerNavGrid">
+                <a href="home.html" class="footerNavGridBtn">Home</a>
+                <a href="builds.html" class="footerNavGridBtn">Build Guide</a>
+                <a href="quiz.html" class="footerNavGridBtn">Quiz</a>
+                <a href="fun-facts.html" class="footerNavGridBtn">Fun Facts</a>
+                <a href="community.html" class="footerNavGridBtn">Community</a>
+              </div>
+            </div>
+
+            <div class="footerNavCol">
+              <h4 class="footerNavTitle">Resources</h4>
+              <span class="footerTitleLine"></span>
+              <div class="footerNavGrid">
+                <a href="home.html#aboutSection" class="footerNavGridBtn">About
+                  Type Soul</a>
+                <a href="fun-facts.html#timeline" class="footerNavGridBtn">Type
+                  Soul Archive</a>
+                <a href="fun-facts.html#changed" class="footerNavGridBtn">What Changed</a>
+                <a href="community.html#youtubers" class="footerNavGridBtn">Youtubers</a>
+                <a href="community.html#communitySpotlight" class="footerNavGridBtn">Community Spotlight</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="coolLine"></div>
+
+      </div>
+
+    </footer>
+
+        <!-- Bootstrap 5 JavaScript -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+        <script src="quiz.js"></script>
+        <script src="animations.js"></script>
+
+    </body>
+</html>
