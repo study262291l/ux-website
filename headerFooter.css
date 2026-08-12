@@ -14,7 +14,7 @@
   --textDarkPrimary: #1e1e1f;
 
   --fontHeader: 'Cinzel', serif;
-
+  --fontBody: 'Montserrat', sans-serif;
   --texture: url('assets/subtle-grunge.png');
 }
 
@@ -49,6 +49,26 @@ html {
 /* ==========================================================
    Header Nav
 ========================================================== */
+
+.headerNav,
+.headerNav a,
+.hnBarLeft {
+  font-family: var(--fontHeader);
+}
+
+.footerTitle,
+.footerTitleLarge,
+.footerNavTitle {
+  font-family: var(--fontHeader);
+}
+
+.mainFooter,
+.mainFooter a,
+.mainFooter p,
+.mainFooter span {
+  font-family: var(--fontBody);
+}
+
 
 .headerNav {
   background-color: var(--welcomeBg);
