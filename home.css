@@ -543,7 +543,7 @@ body {
   right: -50px;
   top: -56px;
   height: calc(380px + 56px);
-  z-index: 30;
+  z-index: 1000;
   pointer-events: none;
 }
 
