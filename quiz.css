@@ -1,7 +1,3 @@
-/* =========================================================
-   TYPE SOUL QUIZ
-   ========================================================= */
-
 :root {
     --black: #111113;
     --dark: #1b1b1e;
@@ -37,13 +33,14 @@ body {
 }
 
 body a {
-  display:inline-block;
-  transition: transform 0.25s ease;
+    display: inline-block;
+    transition: transform 0.25s ease;
 }
 
 body a:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
+
 /* =========================================================
    PAGE
    ========================================================= */
@@ -56,11 +53,6 @@ body a:hover {
 
     padding: 80px 30px 120px;
 }
-
-
-/* =========================================================
-   HERO
-   ========================================================= */
 
 .quizHero {
     text-align: center;
@@ -213,11 +205,6 @@ body a:hover {
 
     padding: 0 5px;
 }
-
-
-/* =========================================================
-   BOOTSTRAP PROGRESS BAR
-   ========================================================= */
 
 .progressContainer {
     width: 360px;
@@ -537,11 +524,6 @@ body a:hover {
     line-height: 1.7;
 }
 
-
-/* =========================================================
-   BOOTSTRAP FORM OVERRIDES
-   ========================================================= */
-
 .formGroup label {
     font-family: var(--headerFont);
 
@@ -582,10 +564,6 @@ body a:hover {
         0 0 0 3px rgba(0, 0, 0, 0.05) !important;
 }
 
-
-/* =========================================================
-   RADIO
-   ========================================================= */
 
 .radioGroup {
     display: flex;
@@ -747,11 +725,6 @@ body a:hover {
         translateY(-2px);
 }
 
-
-/* =========================================================
-   HIDDEN
-   ========================================================= */
-
 .hidden {
     display: none !important;
 }
@@ -851,7 +824,7 @@ body a:hover {
 
     text-align: center;
 }
-    
+
 
 .resultHomeButton {
     display: flex;
