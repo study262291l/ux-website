@@ -22,7 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Keep Bootstrap from changing the project's custom typography */
 .discordWrapper *,
 .discordWrapper *::before,
 .discordWrapper *::after {
@@ -154,7 +153,6 @@ body {
   line-height: 1.8;
 }
 
-/* BOOTSTRAP PLATFORM GRID */
 .platformSection {
   margin-top: 0;
 }
@@ -580,7 +578,6 @@ body {
   font-size: 9px;
 }
 
-/* MODAL */
 .discordModalOverlay {
   position: fixed;
   inset: 0;
